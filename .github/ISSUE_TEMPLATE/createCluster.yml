@@ -15,6 +15,8 @@ body:
         - label: 'Simplest, bare-bones cluster'
         - label: 'I prefer control & community oss'
         - label: 'I want a managed environment'
+  validations:
+    required: true
 
 - type: checkboxes
   id: SecurityPrinciples
@@ -25,7 +27,9 @@ body:
         - label: 'Simple, no access limitations'
         - label: 'Cluster with additional security controls'
         - label: 'Private cluster with isolating network controls'
-
+  validations:
+    required: true
+ 
 - type: input
   id: ClusterName
   attributes:
