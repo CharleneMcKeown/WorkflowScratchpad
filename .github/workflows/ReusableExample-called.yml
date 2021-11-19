@@ -2,10 +2,12 @@ name: Called Workflow
 on: 
   workflow_call:
     inputs:
-      catName:
+      NAME:
         required: true
-      catColour:
+        type: string
+      COLOUR:
         required: true
+        type: string
 
 jobs:
   example_job:
@@ -16,5 +18,5 @@ jobs:
     - name: Echo inputs
       run: echo $NAME is $COLOUR!
       env:
-        NAME: '["${{ inputs.catName }}"]'
-        COLOUR: '["${{ inputs.catColour }}"]'    
+        NAME: '["${{ inputs.NAME }}"]'
+        COLOUR: '["${{ inputs.COLOUR }}"]'    
