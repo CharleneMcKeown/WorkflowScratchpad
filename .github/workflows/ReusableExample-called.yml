@@ -18,5 +18,5 @@ jobs:
     - name: Echo inputs
       run: echo $NAME is $COLOUR!
       env:
-        NAME: '["${{ inputs.NAME }}"]'
-        COLOUR: '["${{ inputs.COLOUR }}"]'    
+        NAME: ${{ inputs.NAME }}
+        COLOUR: ${{ inputs.COLOUR }}  
