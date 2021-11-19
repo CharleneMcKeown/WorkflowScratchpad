@@ -13,4 +13,4 @@ jobs:
         uses: pozil/auto-assign-issue@v1
         with:
           repo-token: ${{ github.token }}
-          assignees: ${{ github.event.issue.actor }}
+          assignees: ${{ github.actor }}
