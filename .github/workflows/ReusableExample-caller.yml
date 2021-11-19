@@ -1,0 +1,16 @@
+name: Reuseable Workflow Example
+
+on: 
+  workflow_dispatch:
+    inputs:
+      catName:
+        required: true
+      catColour:
+        required: true
+
+jobs:
+  call-workflow-passing-data:
+    uses: charlenemckeown/WorkflowScratchpad/.github/workflows/ReusableExample-called.yml@main
+    with:
+      catName: ${{ inputs.catName }}
+      catColour: ${{ inputs.catColour }}
