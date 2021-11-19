@@ -1,9 +1,7 @@
 name: Create AKS Cluster
 description: 'Create a new cluster once the issue form is created'
-title: 'New Cluster request for: ${{ github.event.issue.actor }}'
+title: 'New Cluster request: '
 labels: deploy
-assignees:
-    - ${{ github.event.issue.actor }}
 
 body: 
 - type: checkboxes
