@@ -12,5 +12,5 @@ jobs:
   call-workflow-passing-data:
     uses: charlenemckeown/WorkflowScratchpad/.github/workflows/ReusableExample-called.yml@main
     with:
-      catName: ${{ inputs.catName }}
-      catColour: ${{ inputs.catColour }}
+      NAME: ${{ github.event.inputs.catName }}
+      COLOUR: ${{ github.event.inputs.catColour }}
