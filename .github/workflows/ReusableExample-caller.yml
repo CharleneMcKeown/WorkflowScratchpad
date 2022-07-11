@@ -10,6 +10,7 @@ on:
 
 jobs:
   call-workflow-passing-data:
+    if: contains(github.head_ref, '/feature/') || contains(github.head_ref, '/release/') || startsWith(github.head_ref, 'hotfix/')
     uses: charlenemckeown/WorkflowScratchpad/.github/workflows/ReusableExample-called.yml@main
     with:
       NAME: ${{ github.event.inputs.catName }}
