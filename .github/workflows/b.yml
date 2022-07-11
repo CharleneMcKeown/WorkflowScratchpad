@@ -1,0 +1,12 @@
+name: Called Workflow
+on: 
+  workflow_call:
+
+jobs:
+  example_job:
+    name: Pass input and secrets to my-action
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Echo inputs
+      run: echo 'Hello there'
