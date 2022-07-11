@@ -10,7 +10,7 @@ on:
         
 jobs:
   call-workflow-passing-data:
-    if: ${{ contains(github.ref_name, 'feature') || contains(github.ref_name, 'release') || startsWith(github.head_ref, 'hotfix/') }}
+    if: github.repository == 'CharleneMcKeown/WorkflowScratchpad'
     uses: charlenemckeown/WorkflowScratchpad/.github/workflows/ReusableExample-called.yml@main
     with:
       NAME: ${{ github.event.inputs.catName }}
