@@ -10,7 +10,7 @@ on:
         
 jobs:
   call-workflow-passing-data:
-    if: contains(github.ref, 'refs/heads/feature')
+    if: contains(github.ref_name, 'feature')
     uses: charlenemckeown/WorkflowScratchpad/.github/workflows/ReusableExample-called.yml@main
     with:
       NAME: ${{ github.event.inputs.catName }}
