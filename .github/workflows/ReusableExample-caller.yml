@@ -7,7 +7,15 @@ on:
         required: true
       catColour:
         required: true
-
+      logLevel:
+              description: 'Log level'
+              required: true
+              default: 'warning' 
+              type: choice
+              options:
+              - info
+              - warning
+              - debug 
 jobs:
   call-workflow-passing-data:
     if: ${{ contains(github.head_ref, '/feature/') || contains(github.head_ref, '/release/') || startsWith(github.head_ref, 'hotfix/') }}
