@@ -5,5 +5,5 @@ on:
         
 jobs:
   call-workflow-b:
-    if: contains(github.head_ref, 'feature') || contains(github.head_ref, 'release')
+    if: contains(github.head_ref, '/feature/') || contains(github.head_ref, '/release/')
     uses: charlenemckeown/WorkflowScratchpad/.github/workflows/b.yml@main
