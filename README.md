@@ -13,3 +13,4 @@ Name | Summary | Description / Typical Use Case
 [Auto Label](.github/workflows/labeler.yml) | Auto label a new issue using GitHub Script  | For example, add a 'Triage' label when a new issue is created.
 [Reusable Workflows](.github/workflows/ReusableExample-caller.yml) | Shows how to call another workflow in the same repo | Inputs to the calling workflow are passed to the called workflow.
 [Azure login with OIDC](.github/workflows/oidc.yml) | Use the Azure Login Action with OpenID Connect and scope it to an environment | This way, we don't need to store a long lived service principal secret in GitHub as a JSON object.
+
