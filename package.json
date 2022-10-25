@@ -6,15 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/octodemo-emea-enablement/tmpl-actions-data-v1.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/octodemo-emea-enablement/tmpl-actions-data-v1/issues"
-  },
-  "homepage": "https://github.com/octodemo-emea-enablement/tmpl-actions-data-v1#readme"
+  "license": "ISC"
 }
